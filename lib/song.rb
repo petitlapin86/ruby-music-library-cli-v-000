@@ -49,7 +49,7 @@ attr_reader :artist, :genre
         def self.create_from_filename(filename) #ame thing as .new_from_filename but also saves the newly-created song to the @@all class variable.
           new_from_filename(filename).tap{ |s| s.save }
         end
-  
+
 
 
 
