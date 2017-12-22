@@ -4,7 +4,7 @@ attr_reader :artist, :genre
 
 
   @@all = [] #  each class should contain a class variable @@all that is set to an empty array
-  
+
       def initialize(name, artist = nil, genre = nil) #they can accept a name upon initialization
         @name = name #and set that property correctly
         self.artist = artist if artist
