@@ -10,7 +10,7 @@ attr_reader :artist, :genre
         self.artist = artist if artist
         self.genre = genre if genre
       end
-      
+
         def artist=(artist)
           @artist = artist
           artist.add_song(self)
@@ -20,7 +20,7 @@ attr_reader :artist, :genre
           @genre = genre
           genre.songs << self unless genre.songs.include?(self)
         end
-    
+
 
       def self.all # This class variable should be accessible via the class method .all.
         @@all
