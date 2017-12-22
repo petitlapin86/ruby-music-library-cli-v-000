@@ -2,7 +2,7 @@ class Song
 attr_accessor :name #The name property should be readable and writable by the object.
 attr_reader :artist, :genre
 
-      def initialize(name, song = nil, genre = nil) #they can accept a name upon initialization
+      def initialize(name, artist = nil, genre = nil) #they can accept a name upon initialization
         @name = name #and set that property correctly
         self.artist = artist if artist
         self.genre = genre if genre
